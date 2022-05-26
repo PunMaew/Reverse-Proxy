@@ -5,9 +5,9 @@ services:
     build: .
     image: nginx
     volumes:
-      - /home/dohttps/nginx/config/nginx.conf:/etc/nginx/nginx.conf/:rw
-      - /home/dohttps/nginx/config/conf.d/default.conf:/etc/nginx/conf.d/default.conf:rw
-      - /home/dohttps/nginx/logs:/var/log/nginx/:rw
+      - ./nginx.conf:/etc/nginx/nginx.conf/
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ./https/nginx/logs:/var/log/nginx/
 
     ports:
       - "80:80"
