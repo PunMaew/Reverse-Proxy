@@ -10,7 +10,7 @@ services:
       - ./https/nginx/logs:/var/log/nginx/
 
     ports:
-      - "443:443"
+      - "80:443"
 
 networks:
   default:
