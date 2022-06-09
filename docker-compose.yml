@@ -11,7 +11,7 @@ services:
       - /home/punmaewadmin/ssl:/ssl/
 
     ports:
-      - "443:443"
+      # - "443:443"
       - "80:80"
 
 networks:
