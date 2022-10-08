@@ -10,11 +10,9 @@ services:
       # - ./nginx-back.conf:/etc/nginx/conf.d/nginx-back.conf
       - ./https/nginx/logs:/var/log/nginx/
       - /home/punmaewadmin/ssl:/ssl/
-
     ports:
       - "80:80"
       - "443:443"
-
 networks:
   default:
     external:
